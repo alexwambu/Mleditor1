@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ethereum Network & Token Builder</title>
+  <meta charset="utf-8"/>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    .box { border: 1px solid #ccc; padding: 15px; border-radius: 10px; width: 400px; }
+  </style>
+</head>
+<body>
+  <h1>🚀 Ethereum Network & Token Builder</h1>
+
+  <h3>🪄 Build Ethereum Network</h3>
+  <form action="/build-network" method="post">
+    Chain ID: <input type="number" name="chain_id" required><br>
+    Signer: <input type="text" name="signer" required><br>
+    <button type="submit">Build Network</button>
+  </form>
+
+  <h3>💰 Deploy Token</h3>
+  <form action="/deploy-token" method="post">
+    Name: <input type="text" name="name" required><br>
+    Symbol: <input type="text" name="symbol" required><br>
+    Supply: <input type="number" name="supply" required><br>
+    <button type="submit">Deploy Token</button>
+  </form>
+
+  <hr>
+  <p>Server will auto-sync with memory storage and stay alive every 18 s.</p>
+</body>
+</html>
